@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 font-sans text-popx-text-primary;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply mx-auto max-w-sm bg-white border border-popx-border shadow-sm overflow-hidden;
+    height: 760px;
+  }
+  
+  .form-input {
+    @apply w-full px-4 py-3 rounded-md border border-popx-border focus:outline-none focus:ring-2 focus:ring-popx-purple/20 focus:border-popx-purple;
+  }
+  
+  .btn-primary {
+    @apply w-full py-3 rounded-md bg-popx-purple text-white font-medium transition-all duration-200 hover:bg-popx-purple/90 active:scale-[0.98];
+  }
+  
+  .btn-secondary {
+    @apply w-full py-3 rounded-md bg-popx-light-purple text-popx-purple font-medium transition-all duration-200 hover:bg-popx-light-purple/90 active:scale-[0.98];
+  }
+  
+  .btn-disabled {
+    @apply w-full py-3 rounded-md bg-popx-gray text-white font-medium cursor-not-allowed;
+  }
+  
+  .input-label {
+    @apply text-popx-purple text-sm font-medium mb-1;
+  }
+  
+  .required-field::after {
+    content: "*";
+    @apply text-red-500 ml-0.5;
+  }
+}
