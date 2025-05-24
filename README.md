@@ -1,6 +1,6 @@
 # 🚀 PopX Mobile UI - React + TypeScript + Vite
 
-#Live Link:
+#Live Link: https://storied-paletas-5b4093.netlify.app/
 
 A pixel-perfect, mobile-first UI for PopX – built with React, Vite, and TypeScript. Includes elegant page transitions powered by Framer Motion and seamless navigation using React Router DOM. Designed to mimic the feel of a native mobile app.
 
