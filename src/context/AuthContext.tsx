@@ -11,7 +11,7 @@ interface User {
 
 interface AuthContextType {
   user: User | null;
-  login: (email: string, password: string) => Promise<void>;
+  login: (email: string) => Promise<void>;
   register: (userData: Omit<User, 'id'>) => Promise<void>;
   logout: () => void;
   isAuthenticated: boolean;
@@ -32,7 +32,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   }, []);
 
-  const login = async (email: string, password: string): Promise<void> => {
+  const login = async (email: string): Promise<void> => {
     // Simulate API call
     return new Promise((resolve) => {
       setTimeout(() => {
